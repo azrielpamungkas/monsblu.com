@@ -1,0 +1,152 @@
+body {
+    font-family: "Lato";
+    background-color: #f9fbfe;
+    scroll-behavior: smooth;
+}
+
+a{
+    text-decoration: none;
+}
+
+nav{
+    height: 48px;
+    box-shadow: 0 1px 3px rgba(160,166,179,0.3);
+    font-size:  0.75rem;
+    letter-spacing: 1px;
+}
+
+@media (max-width: 1080px){
+    nav{
+        height: auto;
+    }
+}
+
+.navbar-brand{
+    font-size: 14px;
+}
+
+.bg-light{
+    background-color: #fff !important;
+}
+
+.navbar-light .navbar-toggler{
+    border: none;
+    font-size: 14px;;
+    color: #fff;
+    
+}
+
+.navbar-light .navbar-nav .nav-link {
+	color: rgb(43, 84, 106);
+}
+
+.form-control{
+    padding: .200rem .75rem;
+}
+
+.toc-wrapper{
+    border-left: 2px solid #0d81fea9;
+    padding-left: 0.75rem;
+    list-style: none;
+}
+
+.toc-wrapper a{
+    text-decoration: none;
+    color: #777777;
+}
+
+.toc-wrapper a:hover{
+    text-decoration: none;
+    color: #3f3f3f;
+}
+
+.tutorial-view{
+    text-align: center;
+    padding: 12px;
+}
+
+.comment-wrapper{
+    padding: 12px;
+}
+
+
+
+
+.tutorial-view img{
+    width: 60%;
+    height: inherit;
+    border-radius: 3px;
+    margin-left: 15%;
+}
+
+.tutorial-view h1{
+    /* font-size: 35px; */
+    font-weight: 600;
+    text-align: left;
+    color: #2b546a;
+    margin-top: 15px;
+
+}
+
+.tutorial-view p {
+    text-align: left;
+    color: rgb(132, 145, 165);
+}
+
+h2{
+    font-weight: 600;
+    text-align: left;
+    color: #2b546a;
+    margin-top: 15px;
+
+}
+
+h3{
+    font-weight: 600;
+    text-align: left;
+    color: #2b546a;
+    margin-top: 15px;
+}
+
+blockquote {
+    font-style: italic;
+    border-left: 3px solid #0d80fe;
+    text-align: left;
+    padding: 15px;
+    margin: 15px;
+    color: #2b546a;
+}
+.toc-nav{
+    font-size: 0.80rem;
+    height: 200px ;
+    margin-top: 18px;
+    padding: 15px;
+    box-shadow: none;
+}
+
+.toc-nav li{
+    padding: 9px 5px;;
+}
+
+.tutorial-view .meta{
+    text-align: left;
+}
+
+.meta i{
+    padding-right:10px;
+}
+
+.list-group p{
+    margin-bottom: 0;
+}
+
+.list-group .sub{
+    font-size: 14px;
+    color:  #777777;
+}
+
+
+.h-list{
+    color: #777777;
+    font-weight: 300    ;
+}
