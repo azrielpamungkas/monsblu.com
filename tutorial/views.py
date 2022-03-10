@@ -24,4 +24,4 @@ class SearchView(generic.ListView):
 
     def get_queryset(self):
         query = self.request.GET.get("q")
-        return Post.objects.filter(Q(title__icontains=query) | Q(content__icontains=query))
+        return Post.objects.filter(Q(title__icontains=query) | Q(content__icontains=query) & status = 1)[:20]
