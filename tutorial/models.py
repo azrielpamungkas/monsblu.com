@@ -2,7 +2,7 @@ from django.db import models
 from django.template.defaultfilters import slugify
 from django.urls import reverse
 from django.utils import timezone
-from ckeditor_uploader.fields import RichTextUploadingField
+from ckeditor.fields import RichTextField
 
 STATUS  = (
     (0, 'Draft'),
@@ -13,7 +13,7 @@ class Post(models.Model):
     title = models.CharField(max_length=100)
     desc = models.CharField(max_length=50, null=True)
     slug = models.SlugField(unique=True, null=True, blank=True)
-    content = RichTextUploadingField()
+    content = RichTextField()
     tag = models.CharField(max_length=50, null=True)
     created_at = models.DateTimeField(auto_now_add=True)
     published = models.DateField(null=True, blank=True, editable=False)
