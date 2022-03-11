@@ -1,0 +1,23 @@
+{% extends 'base_tutorial.html' %}
+{% load static %}
+{% block 'external_head' %}
+<script src="https://use.fontawesome.com/04059433fd.js" type="text/javascript"></script>
+{% endblock  %}
+{% block 'title' %} 404 Not Found {% endblock %}
+
+{% block 'body' %}
+<section class="not-found">
+    <div class="container">
+        <div class="not-found-wrapper">
+            <img class="hero-not-found" src="{% static 'img/search-404.svg' %}" alt="search for something">
+            <p>This page isn't available. Sorry about that.<br>Try searching for something else.</p>
+            <form action="{% url 'search' %}" method="get" class="d-flex">
+                <img clasas="me-2" src="{% static 'img/logo_small.svg' %}" alt="logo small">
+                <input  name="q" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-secondary" type="submit"><i class="fa fa-search"></i></button>
+            </form>
+        </div>
+
+    </div>  
+</section>
+{% endblock %}

@@ -150,3 +150,25 @@ blockquote {
     color: #777777;
     font-weight: 300    ;
 }
+
+.not-found-wrapper{
+    color: rgb(92, 91, 91);
+}
+
+.hero-not-found{
+    width: 100%;
+    height: 200px;
+    margin-bottom: 20px;
+}
+
+.not-found-wrapper .btn-secondary{
+    background-color: #250953;
+}
+
+.not-found .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
